@@ -14,5 +14,5 @@
 |data zakupu|span.user-post__published > time:nth-child(2)\[datetime\]|purchase_date|
 |dla ilu przydatna|button.vote-yes [data-total-vote]<br>button.vote-yes > span<br>span[id^=votes-yes]|useful|
 |dla ilu nieprzydatna|button.vote-no [data-total-vote]<br>button.vote-no > span<br>span[id^=votes-no]|useless|
-|lista zalet|div.review-feature__title review-feature__title--positives ~ div.review-feature__item<br>div.review-feature__col:has(div.review-feature__title--positives) > div.review-feature__item<br>div.review-feature__item:has( ~ div.review-feature__title--positives|pros|
+|lista zalet|div.review-feature__title--positives ~ div.review-feature__item<br>div.review-feature__col:has(div.review-feature__title--positives) > div.review-feature__item<br>div.review-feature__item:has( ~ div.review-feature__title--positives|pros|
 |lista wad|div.review-feature__title review-feature__title--positives ~ div.review-feature__item<br>div.review-feature__col:has(div.review-feature__title--positives) > div.review-feature__item<br>div.review-feature__item:has( ~ div.review-feature__title--positives|cons|
