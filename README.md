@@ -1,6 +1,6 @@
 # CeneoScraper
 
-## Analiza struktury opinii w serwisie Ceneo.pl ciastko
+## Analiza struktury opinii w serwisie Ceneo.pl
 
 |Składowa|Selektor|Zmienna|Typ zmiennej|
 |--------|--------|-------|------------|
