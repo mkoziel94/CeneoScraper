@@ -21,6 +21,6 @@ recommendations.plot.pie(
     labels = ["Nie polecam", "Polecam", "Nie mam zdania"],
     colors = ["crimson", "forestgreen", "lightskyblue"]
 )
-# plt.show()
+plt.show()
 plt.savefig("plots/"+product_id+"_recommendations.png")
 plt.close()
