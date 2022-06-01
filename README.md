@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CeneoScraper
 
 ## Analiza struktury opinii w serwisie Ceneo.pl
@@ -22,3 +23,6 @@
 2) zapisanie wszystkich składowych pojedynczej opinii do obiektu słownika(dictionary)
 3) pobranie wszystkich opinii z pojedynczej strony i zapisanie ich do listy słowników 
 4) pobranie wszystkich opinii o wskazanym produkcie i zapisanie ich do pliku
+=======
+# CeneoWebScraperN11
+>>>>>>> aac459b611dfbcaa35759cf0268ebce050a75da7
