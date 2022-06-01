@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 from matplotlib import pyplot as plt
+import numpy as np
 
 print(*[filename.split(".")[0] for filename in os.listdir("./reviews")], sep="\n")
 product_id = input("Podaj identyfokator produktu: ")
@@ -21,6 +22,23 @@ recommendations.plot.pie(
     labels = ["Nie polecam", "Polecam", "Nie mam zdania"],
     colors = ["crimson", "forestgreen", "lightskyblue"]
 )
+plt.show()
+plt.savefig("plots/"+product_id+"_recommendations.png")
+plt.close()
+
+stars = opinions.stars.value_counts().reindex(np.arange(0,5.5,0.5), fill_value = 0)
+
+stars.plot.bar(color = "red")
+plt.title("Gwiazdki")
+plt.xlabel("Liczba gwiazdek")
+plt.ylabel("Liczba opinii")
+plt.savefig("plots/{}.png".format(product_id))
+plt.show()
+plt.close()
+
+recomm = opinions.recomm.value_counts(dropna = False).sort_index()
+recomm.plot.pie(colors = ["crimson", "yellow", "forestgreen"])
+
 plt.show()
 plt.savefig("plots/"+product_id+"_recommendations.png")
 plt.close()
