@@ -28,17 +28,15 @@ plt.close()
 
 stars = opinions.stars.value_counts().reindex(np.arange(0,5.5,0.5), fill_value = 0)
 
-stars.plot.bar(color = "red")
-plt.title("Gwiazdki")
-plt.xlabel("Liczba gwiazdek")
-plt.ylabel("Liczba opinii")
+stars.plot.bar(color = "blue")
+plt.title("Stars")
+plt.xlabel("# of stars")
+plt.ylabel("# of reviews")
 plt.savefig("plots/{}.png".format(product_id))
 plt.show()
 plt.close()
 
 recomm = opinions.recomm.value_counts(dropna = False).sort_index()
-recomm.plot.pie(colors = ["crimson", "yellow", "forestgreen"])
+recomm.plot.pie(colors = ["yellow", "green", "purple"])
 
 plt.show()
-plt.savefig("plots/"+product_id+"_recommendations.png")
-plt.close()
